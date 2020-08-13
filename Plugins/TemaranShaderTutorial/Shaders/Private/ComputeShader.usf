@@ -54,6 +54,7 @@ void MainComputeShader(uint3 ThreadId : SV_DispatchThreadID)
 					+ lerp(0.0, 0.6, v3) * 0.3;
 
 	float3 powered = pow(abs(col), float3(1.2, 1.2, 1.2));
+	// float3 powered = (0.1, 0, 0);
 	float3 minimized = min(powered, 1.0);
 	float4 outputColor = float4(minimized, 1.0);
 

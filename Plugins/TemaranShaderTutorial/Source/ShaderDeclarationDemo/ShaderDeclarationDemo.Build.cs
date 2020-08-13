@@ -13,7 +13,8 @@ namespace UnrealBuildTool.Rules
 			
 			PrivateIncludePaths.AddRange(new string[] 
 			{
-				"ShaderDeclarationDemo/Private"
+				"ShaderDeclarationDemo/Private",
+				EngineDirectory + "/Shaders/Shared"
 			});
 
 			PrivateDependencyModuleNames.AddRange(new string[]
